@@ -1,0 +1,120 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+
+
+/* Keyframe animation */
+@keyframes bounceAnimation {
+    0% {
+      transform: translateY(0) scale(1);
+      color: #ff6347; 
+    }
+    50% {
+      transform: translateY(-10px) scale(1.2);
+      color: #00bfff;
+    }
+    100% {
+      transform: translateY(0) scale(1);
+      color: #ff69b4;
+    }
+  }
+
+  .hero-content h1 span {
+    display: inline-block;
+    animation: bounceAnimation 1s ease-in-out 1; 
+  }
+   
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    letter-spacing: 6px;
+    white-space: nowrap; 
+  }
+  
+  .hero-content h1 span {
+    display: inline-block;
+  }
+  
+  .home-container {
+    text-align: center;
+  }
+  
+  .hero-section {
+    background: url('../../assets/images/cybersecurity-digital-information-technology-concept-polygon-binary-code-connected_371307-161.avif') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif; 
+    color: #fff; 
+    background: linear-gradient(45deg, #ff5f6d, #ffc371);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    display: inline-block; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  }
+  
+  .hero-content p:hover {
+    transform: scale(1.5); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .hero-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4a88cf;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.6s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #ffffff;
+    color: black;
+  }
+  

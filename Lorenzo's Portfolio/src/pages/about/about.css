@@ -1,0 +1,60 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(135deg, #050d53, #8349db); /* Gradient background */
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .about-section,
+  .goal-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  .about-heading,
+  .goal-heading {
+    font-size: 2.5rem;
+    color: #67b3ff; 
+    text-transform: uppercase;
+    margin-right: 20px;
+    border-bottom: 2px solid #67b3ff; 
+    padding-bottom: 10px; 
+  }
+  
+  .about-line,
+  .goal-line {
+    flex: 1;
+    height: 2px;
+    background-color: #67b3ff; 
+    margin: 0 20px;
+  }
+  
+  .about-info,
+  .goal-info {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ccc; 
+    max-width: 800px;
+    text-align: justify;
+  }
+  
+  /* Adjustments */
+  .goal-heading {
+    margin-right: 0; 
+  }
+  
+  .about-heading,
+  .goal-info {
+    text-align: left; 
+  }
+  
+  .goal-info {
+    order: -1; 
+  }
+  

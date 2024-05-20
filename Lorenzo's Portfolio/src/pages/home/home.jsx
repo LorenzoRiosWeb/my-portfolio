@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './home.css';
 
 const Home = () => {
+  const [welcomeMessage, setWelcomeMessage] = useState('Welcome to My Portfolio');
+
   useEffect(() => {
     const letters = document.querySelectorAll('.hero-content h1 span');
 
@@ -16,32 +18,12 @@ const Home = () => {
       <section className="hero-section">
         <div className="hero-content">
           <h1 className="welcome-text">
-            <span>W</span>
-            <span>e</span>
-            <span>l</span>
-            <span>c</span>
-            <span>o</span>
-            <span>m</span>
-            <span>e</span>
-            <span> </span>
-            <span>t</span>
-            <span>o</span>
-            <span> </span>
-            <span>M</span>
-            <span>y</span>
-            <span> </span>
-            <span>P</span>
-            <span>o</span>
-            <span>r</span>
-            <span>t</span>
-            <span>f</span>
-            <span>o</span>
-            <span>l</span>
-            <span>i</span>
-            <span>o</span>
+            {welcomeMessage.split('').map((char, index) => (
+              <span key={index}>{char}</span>
+            ))}
           </h1>
           <p>I'm Lorenzo, a passionate web developer crafting amazing digital experiences.</p>
-          <Link to="/project" className="hero-button">View My Work</Link>
+          <Link to="/projects" className="hero-button">View My Work</Link>
         </div>
       </section>
     </div>
